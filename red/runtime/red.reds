@@ -60,6 +60,7 @@ red: context [
 	#include %datatypes/paren.reds
 	#include %datatypes/issue.reds
 	#include %datatypes/file.reds
+	#include %datatypes/list.reds
 	
 	;-- Debugging helpers --
 	
@@ -83,7 +84,7 @@ red: context [
 	init: does [
 		platform/init
 		init-mem										;@@ needs a local context
-		
+	
 		name-table: as names! allocate 50 * size? names!	 ;-- datatype names table
 		action-table: as int-ptr! allocate 256 * 50 * size? pointer! ;-- actions jump table	
 
@@ -114,6 +115,7 @@ red: context [
 		paren/init
 		issue/init
 		file/init
+		list/init 
 		
 		actions/init
 		

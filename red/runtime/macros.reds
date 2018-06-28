@@ -51,6 +51,8 @@ Red/System [
 	TYPE_PORT
 	TYPE_BITSET
 	TYPE_FLOAT
+	TYPE_LIST
+	;TYPE_LIST_NODE
 ]
 
 #enum actions! [

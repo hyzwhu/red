@@ -189,3 +189,17 @@ red-routine!: alias struct! [
 	;	symbols	 [red-block!]						;-- 	routine cleaned-up spec block reference
 	;	native   [node!]							;-- 	compiled body (binary!)
 ]
+
+; red-list-node!: alias struct! [
+; 	header	[integer!]
+; 	prev 	[red-list-node!]
+; 	next 	[red-list-node!]
+; 	node	[node!]
+; ]
+
+red-list!: alias struct! [
+	header	[integer!]
+	head	[integer!]
+	list 	[integer!]
+	pad 	[integer!]	
+]
